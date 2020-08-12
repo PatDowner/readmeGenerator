@@ -55,7 +55,7 @@ inquirer
   ])
   .then(res => {
 
-    fs.writeFile('README.md', `# ${res.title}
+    fs.writeFile('sampleREADME.md', `# ${res.title}
   ![badge](https://img.shields.io/badge/license-${res.license}-blue.svg)
   
   -------
