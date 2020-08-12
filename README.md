@@ -1,6 +1,5 @@
-# Title: a
-  ![badge](https://img.shields.io/badge/license-MIT-blue.svg)
-  
+# Good README Generator
+
   -------
   
   ## Table of Contents
@@ -16,37 +15,36 @@
 
   ## Description:
   
-  b
+  This is a  NodeJS script that uses the NPM Inquirer to run a series of prompts. The responses to the prompts are then used to generate a README file.
   
 
   ## Installation:
   
-  c
+  Download the GitHub repository, ensure the necessary NPMs are installed
   
 
   ## Usage:
   
-  d
+  Run `node index.js` in your terminal from the repo folder and answer the prompts.
+
+  ![image of prompt process](./scriptUse.png)
+
+  Watch a [video walk-through](https://drive.google.com/file/d/1cw0jETUCIuGLl6TWD92i3jn1ZfaxGc6C/view) for how to use the app.
   
 
   ## Contributing:
   
-  f
+  Pat Downer
   
 
   ## Testing:
   
-  g
-  
-
-  ## License:
-  
-  MIT
+  n/a
   
 
   ## Questions:
   
-  Github Username: [h](https://github.com/h)
+  Github Username: [PatDowner](https://github.com/PatDowner)
   
   Contact me via email at: [pat.downer85@gmail.com](mailto:pat.downer85@gmail.com)
   
