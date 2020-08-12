@@ -1,38 +1,62 @@
+const inquirer = require('inquirer')
 const fs = require('fs')
-console.log(fs)
 
-// create file README.md
-fs.appendFile('README.md',`#${process.argv[2]}`,(err) => {
-  if(err) {console.log(err)}
-  console.log(`#${process.argv[2]}`)
-})
-// Prompt user to input project title and make that the title of the readme.
+const question = () => {
+  inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?'
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe your project.'
+      },
+      {
+        type: 'input',
+        name: 'installation',
+        message: 'Describe how to install your project.'
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'How should this project be used?'
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: 'Please choose a license type.'
+      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+      },
+      {
+        type: 'input',
+        name: 'contributing',
+        message: 'Who contributed to this project?'
+      },
+      {
+        type: 'input',
+        name: 'testing',
+        message: 'What testing was completed for this project?'
+      },
+      {
+        type: 'input',
+        name: 'questions',
+        message: 'List any questions you want to include in the readme.'
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?'
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?'
+      }
 
 
-// Description
 
-
-// Table of Contents
-// Links to each other section in the readme
-
-// Installation
-
-
-// Usage
-
-
-// License
-// need a list of license options
-// when one is picked, add a badge for that license near the top of readme
-// then in this section, explain which license the application is covered under
-
-// Contributing
-
-
-// Tests
-
-
-// Questions
-// Prompt for GitHub username
-// Put it in the readme w/ a link to GitHub profile
-// Prompt for email, and add "Please email me at ___ with any additional questions."
+    ])
+}
